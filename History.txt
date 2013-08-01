@@ -1,0 +1,6 @@
+=== 0.0.1 / 2013-04-30
+
+* 1 First light
+
+  * Created by Hoe/sow.
+
