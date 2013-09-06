@@ -22,4 +22,8 @@ Hoe.spec "mehoe" do
   license "MIT" # this should match the license in the README
 end
 
+task :check => :spec do
+  sh "cucumber"
+end
+
 # vim: syntax=ruby
