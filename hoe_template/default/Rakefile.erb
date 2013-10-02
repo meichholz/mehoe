@@ -1,0 +1,22 @@
+# -*- ruby -*-
+
+require "rubygems"
+require "rake/clean"
+require "hoe"
+
+<%=
+  found = Gem.find_files("hoe/*.rb").map { |f| File.basename(f, ".rb").to_sym }
+  extra = found - Hoe.plugins - [:rake]
+  extra.map { |name| "# Hoe.plugin #{name.inspect}" }.sort.uniq.join("\n")
+%>
+
+Hoe.plugin :mehoe
+
+Hoe.spec "<%= project %>" do
+  # self.group_name = "<%= project %>" # if part of an organization/group
+  edit_includes [ "man/*.ronn" ]
+  developer("Marian Eichholz", "marian@bugslayer.de")
+  license "MIT" # this should match the license in the README
+end
+
+# vim: syntax=ruby
