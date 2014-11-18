@@ -1,38 +1,44 @@
-= mehoe
+# mehoe
 
-* http://wiki.bugslayer.de/Ruby/Gems
+[About Gems](http://wiki.bugslayer.de/Ruby/Gems)
 
-== DESCRIPTION:
+## BUGS
 
-mehoe contains some standard tasks in my gem development.
+For experimental use only. In fact, I do not use it REALLY. This should giv e a hint. I tend to use Hoe directly with some wiring by my *devsupport* modulle.
 
-== FEATURES/PROBLEMS:
+Especially the wiring appears to **desperately** call for updating (like submoduling, usage of markdown, and so on).
+
+## DESCRIPTION
+
+`mehoe` contains some standard tasks in my gem development.
+
+## FEATURES/PROBLEMS
 
 rudimentary, isn't it?
 
-== SYNOPSIS:
+## SYNOPSIS
 
 Just sow and look.
 
-== REQUIREMENTS:
+## REQUIREMENTS
 
 No special dependencies yet.
 
-== INSTALL:
+## INSTALL
 
-* gem source --add http://giles.bugslayer.de/gemserver/
-* gem install mehoe
+* ``gem source --add http://giles.bugslayer.de/gemserver/`` (well, for **me**)
+* ``gem install mehoe
 
-== DEVELOPERS:
+## DEVELOPERS
 
 After checking out the source, run:
 
-  $ rake newb
+    $ rake newb
 
 This task will install any missing dependencies, run the tests/specs,
 and generate the RDoc.
 
-== LICENSE:
+## LICENSE
 
 (The MIT License)
 
@@ -56,3 +62,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
